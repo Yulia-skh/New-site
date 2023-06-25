@@ -1,0 +1,56 @@
+.button-big
+    background-color: $color-red
+    position: absolute
+    width: 22rem
+    height: 5rem
+    border-radius: 1rem
+    margin-left: 120rem
+    margin-top: .5rem
+    padding-top: .6rem
+    &:hover
+        background-color: $color-blue
+    &__nav
+        @include respond(phone)
+            display: none
+    &_1
+        margin-top: 1rem
+        padding-top: .3rem
+
+    &_2
+        background-color: $color-red
+        width: 15rem
+        height: 5rem
+        border-radius: 1rem
+        margin-left: 1rem
+        z-index: 5
+        margin-top: 1rem
+        padding-top: .4rem
+    &_3
+        background-color: $color-red
+        border-radius: 1rem
+        margin-left: 1rem
+        z-index: 5
+        margin-top: 1rem
+        text-align: center
+        // padding-top: .5rem
+.btn
+    background-color: $color-red
+    width: 22rem
+    height: 5rem
+    border-radius: 1rem
+    margin-left: 6.8rem
+    margin-top: 3rem
+    padding-top: .6rem
+    @include respond(phone)
+        margin-left: 5.5rem
+        width: 18rem
+        padding-top: .5rem
+    @include respond(phone-small)
+        margin-left: 5.5rem
+        width: 18rem
+        padding-top: .5rem
+    &:hover
+        background-color: $color-blue
+    &__1
+        margin-top: 0
+    

@@ -1,0 +1,143 @@
+.section-3
+    background: url(../img/reason-background.jpg) center / cover no-repeat
+    width: 100%
+    height: 122rem
+    @include respond(phone)
+        width: 100%
+        background: url(../img/reason-background-mobile.jpg) center / cover no-repeat
+    @include respond(phone-small)
+        width: 100%
+        background: url(../img/reason-background-mobile.jpg) center / cover no-repeat
+    &__title-2
+        color: white
+        padding-top: 6rem
+        margin-left: 8.4rem
+        @include respond(phone)
+            margin-left: 3rem
+            padding-top: 3rem
+        @include respond(phone-small)
+            margin-left: 3rem
+            padding-top: 3rem
+            margin-right: 2rem
+.block
+    width: 36rem
+    height: 15rem
+    border-radius: 1rem
+    filter: drop-shadow(1rem 1rem 2rem rgba(0, 0, 0, 0.25))
+    background-color: white
+    padding-top: 1.7rem
+    padding-left: 1.7rem
+    @include respond(phone)
+        height: auto
+        padding-top: .7rem
+        padding-left: .7rem
+    @include respond(phone-small)
+        width: 30rem
+        height: auto
+        padding-top: .7rem
+        padding-left: .7rem
+.blocks
+    display: grid
+    grid-template-rows: repeat(2, min-content)
+    grid-template-columns: repeat(7, 1fr)
+    row-gap: 6rem
+    column-gap: 12rem
+    margin-left: 8.4rem
+    margin-top: 6rem
+    @include respond(phone)
+        grid-template-rows: repeat(5, min-content)
+        grid-template-columns: repeat(1, 1fr)
+        row-gap: 2rem
+        margin-left: 2rem
+        margin-top: 2rem
+    @include respond(phone-small)
+        grid-template-rows: repeat(5, min-content)
+        grid-template-columns: repeat(1, 1fr)
+        row-gap: 2rem
+        margin-left: 2rem
+        margin-top: 2rem
+.block-1
+    grid-row: 1 / 2
+    grid-column: 1/ 3
+    
+    @include respond(phone)
+        grid-row: 1 / 2
+        grid-column: 1 / 2
+    @include respond(phone-small)
+        grid-row: 1 / 2
+        grid-column: 1 / 2
+.block-2
+    grid-row: 1 / 2
+    grid-column: 3/ 5
+    @include respond(phone)
+        grid-row: 2 / 3
+        grid-column: 1 / 2
+    @include respond(phone-small)
+        grid-row: 2 / 3
+        grid-column: 1 / 2
+.block-3
+    grid-row: 1 / 2
+    grid-column: 5/ 7
+    @include respond(phone)
+        grid-row: 3 / 4
+        grid-column: 1 / 2
+    @include respond(phone-small)
+        grid-row: 3 / 4
+        grid-column: 1 / 2
+.block-4
+    grid-row: 2 / 3
+    grid-column: 2/ 4
+    @include respond(phone)
+        grid-row: 4 / 5
+        grid-column: 1 / 2
+    @include respond(phone-small)
+        grid-row: 4 / 5
+        grid-column: 1 / 2
+.block-5
+    grid-row: 2 / 3
+    grid-column: 4/ 6
+    @include respond(phone)
+        grid-row: 5 / 6
+        grid-column: 1 / 2
+    @include respond(phone-small)
+        grid-row: 5 / 6
+        grid-column: 1 / 2
+.section-4
+    width: 100%
+    height: auto
+    background: linear-gradient(0.45deg, #2E425C 5.08%, rgba(46, 66, 92, 0.451852) 29.31%, rgba(226, 238, 253, 0) 76.34%)
+    @include respond(phone)
+        width: 100%
+    @include respond(phone-small)
+        width: 100%
+    &__title-2
+        margin-top: 6rem
+        margin-left: 8.4rem
+        @include respond(phone)
+            margin-left: 3rem
+            margin-top: 3rem
+        @include respond(phone-small)
+            margin-left: 3rem
+            margin-top: 3rem
+.parts
+    display: flex
+    flex-direction: row
+    margin-top: 3rem
+    @include respond(phone)
+        flex-direction: column-reverse
+        margin-top: 1rem
+    @include respond(phone-small)
+        flex-direction: column-reverse
+        margin-top: 1rem
+.left-part
+    margin-left: 8.4rem
+    @include respond(phone)
+        margin-left: 1rem
+    @include respond(phone-small)
+        margin-left: 1rem
+.right-part
+    margin-left: 10rem
+    @include respond(phone)
+        margin-left: 1rem
+    @include respond(phone-small)
+        margin-left: 1rem

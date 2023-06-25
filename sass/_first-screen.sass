@@ -1,0 +1,94 @@
+.first-screen
+    position: relative
+.first-screen-1
+    width: 100%
+    position: absolute
+    top: 20rem
+    left: 60rem
+    z-index: 1
+    @include respond(phone)
+        width: 100%
+        position: absolute
+        top: 2rem
+        left: 2rem
+        z-index: 1
+    @include respond(phone-small)
+        width: 100%
+        position: absolute
+        top: 2rem
+        left: 2rem
+        z-index: 1
+    &__video
+        width: 100%
+        height: auto
+        object-fit: cover
+        z-index: 2
+        @include respond(phone)
+            width: 100%
+            height: 50rem
+        @include respond(phone-small)
+            width: 100%
+            height: 50rem
+    &__text-part
+        width: 90%
+        z-index: 5
+        position: absolute
+        top: 6rem
+        left: 8rem
+        @include respond(phone)
+            width: 70%
+            position: absolute
+            top: 6rem
+            left: 2rem
+        @include respond(phone-small)
+            width: 70%
+            position: absolute
+            top: 6rem
+            left: 2rem
+    &__blue-cube
+        position: absolute
+        width: 56rem
+        height: 40rem
+        border-radius: 1rem
+        background-color: $color-blue
+        z-index: 4
+        top: 5rem
+        left: 5rem
+        @include respond(phone)
+            display: none
+        @include respond(phone-small)
+            display: none
+    &__red-cube
+        position: absolute
+        width: 56rem
+        height: 40rem
+        border-radius: 1rem
+        background-color: $color-red
+        z-index: 3
+        top: -2rem
+        left: -2rem
+        @include respond(phone)
+            display: none
+        @include respond(phone-small)
+            display: none
+    &__title-2
+        color: white
+        margin-bottom: 5rem
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 600
+        font-size: 4.5rem
+        line-height: 6rem
+        @include respond(phone)
+            font-size: 2.4rem
+            margin-bottom: 2rem
+        @include respond(phone-small)
+            font-size: 2.4rem
+            margin-bottom: 2rem
+.list
+    margin: 0 
+    &__item
+        list-style-image: url(../icons/done.svg)
+        list-style-type: 'your icon'
+        padding-inline-start: 1rem
+        padding-bottom: 2rem
